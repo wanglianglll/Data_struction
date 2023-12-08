@@ -14,7 +14,13 @@ void Workspace::create(int mode)//给迷宫根据模式分配空间
             maze.m[i]=new int[maze.size];
             for(int j=0;j<maze.size;++j)
             {
-                maze.m[i][j]=0;
+                if(j%2==1&&i%2==1)
+                {
+                    maze.m[i][j]=0;
+                }
+                else{
+                    maze.m[i][j]=1;
+                }
             }
         }
     }
@@ -27,11 +33,16 @@ void Workspace::create(int mode)//给迷宫根据模式分配空间
             maze.m[i]=new int[maze.size];
             for(int j=0;j<maze.size;++j)
             {
-                maze.m[i][j]=0;
-            }
+                if(j%2==1&&i%2==1)
+                {
+                    maze.m[i][j]=0;
+                }
+                else{
+                    maze.m[i][j]=1;
+                }            }
         }
     }
-    else{
+    else if(mode == 3){
         maze.size=35;
         maze.m=new int*[maze.size];
         for(int i=0;i<maze.size;++i)
@@ -39,10 +50,36 @@ void Workspace::create(int mode)//给迷宫根据模式分配空间
             maze.m[i]=new int[maze.size];
             for(int j=0;j<maze.size;++j)
             {
-                maze.m[i][j]=0;
+                if(j%2==1&&i%2==1)
+                {
+                    maze.m[i][j]=0;
+                }
+                else{
+                    maze.m[i][j]=1;
+                }
             }
         }
     }
+    else{
+        cout<<"请自定义大小:";
+        cin>>maze.size;
+        maze.m=new int*[maze.size];
+        for(int i=0;i<maze.size;++i)
+        {
+            maze.m[i]=new int[maze.size];
+            for(int j=0;j<maze.size;++j)
+            {
+                if(j%2==1&&i%2==1)
+                {
+                    maze.m[i][j]=0;
+                }
+                else{
+                    maze.m[i][j]=1;
+                }
+            }
+        }
+    }
+
 }
 
 void Workspace::show() const {
