@@ -1,6 +1,13 @@
-#include <iostream>
+#include "./workspace/Workspace.h"
+
+Workspace workspace;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+    int mode;
+    cout << "input mode:";
+    cin >> mode;
+    workspace.init(mode);
+//    workspace.run();
 }
+
+
