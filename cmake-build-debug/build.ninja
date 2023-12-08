@@ -55,8 +55,8 @@ build CMakeFiles/Data_struction.dir/src/main.cpp.obj: CXX_COMPILER__Data_structi
   OBJECT_DIR = CMakeFiles\Data_struction.dir
   OBJECT_FILE_DIR = CMakeFiles\Data_struction.dir\src
 
-build CMakeFiles/Data_struction.dir/src/workspace/Workspace.cpp.obj: CXX_COMPILER__Data_struction_unscanned_Debug F$:/Software/Study/C++/Data_struction/src/workspace/Workspace.cpp || cmake_object_order_depends_target_Data_struction
-  DEP_FILE = CMakeFiles\Data_struction.dir\src\workspace\Workspace.cpp.obj.d
+build CMakeFiles/Data_struction.dir/src/workspace/workspace.cpp.obj: CXX_COMPILER__Data_struction_unscanned_Debug F$:/Software/Study/C++/Data_struction/src/workspace/workspace.cpp || cmake_object_order_depends_target_Data_struction
+  DEP_FILE = CMakeFiles\Data_struction.dir\src\workspace\workspace.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Data_struction.dir
   OBJECT_FILE_DIR = CMakeFiles\Data_struction.dir\src\workspace
@@ -75,7 +75,7 @@ build CMakeFiles/Data_struction.dir/src/workspace/ui_stream_thread/ui_thread.cpp
 #############################################
 # Link the executable Data_struction.exe
 
-build Data_struction.exe: CXX_EXECUTABLE_LINKER__Data_struction_Debug CMakeFiles/Data_struction.dir/src/main.cpp.obj CMakeFiles/Data_struction.dir/src/workspace/Workspace.cpp.obj CMakeFiles/Data_struction.dir/src/workspace/ui_stream_thread/ui_thread.cpp.obj
+build Data_struction.exe: CXX_EXECUTABLE_LINKER__Data_struction_Debug CMakeFiles/Data_struction.dir/src/main.cpp.obj CMakeFiles/Data_struction.dir/src/workspace/workspace.cpp.obj CMakeFiles/Data_struction.dir/src/workspace/ui_stream_thread/ui_thread.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Data_struction.dir
